@@ -1,0 +1,25 @@
+name: 開発タスク
+description: Claude に実装させるタスク
+body:
+  - type: textarea
+    id: background
+    attributes: { label: 背景・目的 }
+    validations: { required: true }
+  - type: textarea
+    id: criteria
+    attributes:
+      label: 受け入れ条件
+      value: |
+        - [ ] 
+        - [ ] 
+    validations: { required: true }
+  - type: textarea
+    id: scope
+    attributes: { label: 変更対象（想定ファイル・モジュール） }
+    validations: { required: true }
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: スコープ外
+      description: 触ってほしくない範囲を明記
+    validations: { required: true }
